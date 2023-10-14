@@ -1,5 +1,5 @@
 import { Button } from '@/components/button';
-import { Card } from '@/components/card/card';
+import { Card } from '@/components/card';
 import { getGames } from '@/services/games.service';
 
 import { FaWallet, FaChevronDown } from 'react-icons/fa';
