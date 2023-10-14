@@ -1,6 +1,6 @@
-import { cn } from '@/lib/util';
-import React from 'react';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
+
+import { cn } from '@/lib/util';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'default' | 'accent';

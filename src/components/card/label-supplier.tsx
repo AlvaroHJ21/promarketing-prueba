@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react';
+
+import Image from 'next/image';
+
 import { cn } from '@/lib/util';
 import { suppliers } from '@/data/suppliers';
 
@@ -28,6 +31,8 @@ export const LabelSupplier = (props: Props) => {
     };
   }, []);
 
+  if (!supplier) return null;
+
   return (
     <div
       className={cn(
@@ -36,8 +41,8 @@ export const LabelSupplier = (props: Props) => {
       )}
       {...restProps}
     >
-      <img
-        src={isSm ? supplier?.smImgSrc : supplier?.imgSrc}
+      <Image
+        src={isSm ? supplier.smImgSrc : supplier.imgSrc}
         alt={supplier?.name}
         width={isSm ? 20 : 80}
         height={isSm ? 20 : 24}

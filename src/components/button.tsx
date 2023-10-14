@@ -24,11 +24,11 @@ export const Button = (props: Props) => {
     <button
       className={cn(
         //BASE CLASES
-        `uppercase py-[14px] px-8 font-bold rounded-lg flex gap-[10px] items-center border`,
+        `uppercase py-[14px] px-8 font-bold rounded-lg flex gap-[10px] items-center border transition-colors`,
 
         //PRIMARY
         color == 'primary' &&
-          variant != 'outline' &&
+          variant == 'contained' &&
           `bg-primary-900 border-primary-900 text-white hover:bg-primary-500 hover:border-primary-500 active:border-primary-900 disabled:bg-neutral-100 disabled:border-neutral-100 disabled:text-neutral-200`,
 
         color == 'primary' &&
@@ -37,7 +37,7 @@ export const Button = (props: Props) => {
 
         //ACCENT
         color == 'accent' &&
-          variant != 'outline' &&
+          variant == 'contained' &&
           `bg-accent-900 border-accent-900 text-white hover:bg-accent-500 hover:border-accent-500 active:border-accent-900 disabled:bg-neutral-100 disabled:border-neutral-100 disabled:text-neutral-200`,
 
         color == 'accent' &&
