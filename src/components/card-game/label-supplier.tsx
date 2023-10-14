@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { useEffect, useState } from 'react';
 
@@ -16,7 +16,7 @@ export const LabelSupplier = (props: Props) => {
 
   const supplier = suppliers.find((sup) => sup.name === supplierName);
 
-  const [isSm, setIsSm] = useState(typeof window !== 'undefined' && window.innerWidth < 640);
+  const [isSm, setIsSm] = useState(false);
 
   useEffect(() => {
     function rezise() {
@@ -27,6 +27,7 @@ export const LabelSupplier = (props: Props) => {
         setIsSm(false);
       }
     }
+    rezise();
     window.addEventListener('resize', rezise);
     return () => {
       window.removeEventListener('resize', rezise);

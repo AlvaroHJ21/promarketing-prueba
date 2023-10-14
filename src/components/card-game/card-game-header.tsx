@@ -11,7 +11,9 @@ export const CardGameHeader = (props: Props) => {
 
   return (
     <div className="flex justify-between items-start absolute inset-x-3 top-2 z-10">
-      <LabelSupplier supplierName={supplierName} />
+      <div>
+        <LabelSupplier supplierName={supplierName} />
+      </div>
 
       {showButtonInfo && <ButtonInfo onClick={onClickInfo} />}
     </div>
