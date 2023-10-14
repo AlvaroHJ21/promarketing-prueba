@@ -1,14 +1,8 @@
 import { Button } from '@/components/button';
 import { Card } from '@/components/card/card';
-import type { Game } from '@/interfaces/Game';
+import { getGames } from '@/services/games.service';
 
 import { FaWallet, FaChevronDown } from 'react-icons/fa';
-
-async function getGames(): Promise<Game[]> {
-  const resp = await fetch('https://run.mocky.io/v3/a095fe75-f09e-45fa-967c-4b9c4c908fb3');
-  const data = await resp.json();
-  return data;
-}
 
 export default async function Home() {
   const games = await getGames();
@@ -46,7 +40,7 @@ export default async function Home() {
           <Button variant="outline" disabled>
             Button
           </Button>
-          <Button variant="outline" color='accent' disabled>
+          <Button variant="outline" color="accent" disabled>
             Button
           </Button>
         </div>
