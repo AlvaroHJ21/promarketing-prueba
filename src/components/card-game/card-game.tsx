@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 
-import { CardHeader } from './card-header';
-import { CardCta } from './card-cta';
-import { CardInfo } from './card-info';
-import { CardFooter } from './card-footer';
-import { CardBgImage } from './card-bg-image';
-import { CardBgOverlay } from './card-bg-overlay';
+import { CardGameHeader } from './card-game-header';
+import { CardGameCta } from './card-game-cta';
+import { CardGameInfo } from './card-game-info';
+import { CardGameFooter } from './card-game-footer';
+import { CardGameBgImage } from './card-game-bg-image';
+import { CardGameBgOverlay } from './card-game-bg-overlay';
 
 // import img from '@/assets/img/card-placeholder.png';
 import type { Game } from '@/interfaces/Game';
@@ -16,7 +16,7 @@ interface Props {
   game: Game;
 }
 
-export const Card = (props: Props) => {
+export const CardGame = (props: Props) => {
   const { disabled, name, info, supplier, src } = props.game;
 
   const [isPressing, setIsPressing] = useState(false);
@@ -25,25 +25,25 @@ export const Card = (props: Props) => {
   return (
     <div className="w-[130px] h-[120px] sm:w-[250px] sm:h-[200px] relative rounded-2xl overflow-hidden group/card">
 
-      <CardBgImage srcImage={src} altImage={name} />
+      <CardGameBgImage srcImage={src} altImage={name} />
 
-      <CardHeader
+      <CardGameHeader
         showButtonInfo={!isPressing && !isShowInfo && !disabled}
         supplierName={supplier}
         onClickInfo={() => setIsShowInfo(true)}
       />
 
       {!isShowInfo && (
-        <CardCta
+        <CardGameCta
           onMouseDown={() => setIsPressing(true)}
           onMouseUp={() => setIsPressing(false)}
           disabled={disabled}
         />
       )}
 
-      {isShowInfo && <CardInfo name={name} rtp={info.rtp} version={info.version} />}
+      {isShowInfo && <CardGameInfo name={name} rtp={info.rtp} version={info.version} />}
 
-      <CardFooter
+      <CardGameFooter
         name={name}
         showName={!isPressing && !isShowInfo && !disabled}
         showButtonInfo={isShowInfo}
@@ -51,7 +51,7 @@ export const Card = (props: Props) => {
         onClickButtonInfo={() => setIsShowInfo(false)}
       />
 
-      <CardBgOverlay
+      <CardGameBgOverlay
         isShowInfo={isShowInfo}
         disabled={disabled}
         onClick={() => setIsShowInfo(false)}

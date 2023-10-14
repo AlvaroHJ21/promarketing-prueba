@@ -1,5 +1,5 @@
 import { Button } from '@/components/button';
-import { Card } from '@/components/card';
+import { CardGame } from '@/components/card-game';
 import { getGames } from '@/services/games.service';
 
 import { FaWallet, FaChevronDown } from 'react-icons/fa';
@@ -15,7 +15,7 @@ export default async function Home() {
         <h2 className="my-8">Cards</h2>
         <div className="grid grid-cols-2 w-fit gap-2">
           {games.map((game) => (
-            <Card key={game.name} game={game} />
+            <CardGame key={game.name} game={game} />
           ))}
         </div>
       </section>

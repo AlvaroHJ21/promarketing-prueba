@@ -5,7 +5,7 @@ interface Props {
   altImage: string;
 }
 
-export const CardBgImage = (props: Props) => {
+export const CardGameBgImage = (props: Props) => {
   const { srcImage, altImage } = props;
 
   return (

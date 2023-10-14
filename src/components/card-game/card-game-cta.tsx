@@ -3,7 +3,7 @@ import { Button } from '../button/button';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export const CardCta = (props: Props) => {
+export const CardGameCta = (props: Props) => {
   const { className, disabled, color, ...restProps } = props;
   return (
     <div className="absolute inset-0 m-auto z-10 w-fit h-fit">

@@ -5,7 +5,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
   disabled: boolean;
 }
 
-export const CardBgOverlay = (props: Props) => {
+export const CardGameBgOverlay = (props: Props) => {
   const { disabled, isShowInfo, ...restProps } = props;
   return (
     <div

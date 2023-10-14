@@ -7,7 +7,7 @@ interface Props {
   onClickInfo: () => void;
 }
 
-export const CardHeader = (props: Props) => {
+export const CardGameHeader = (props: Props) => {
   const { showButtonInfo, supplierName, onClickInfo } = props;
 
   return (
