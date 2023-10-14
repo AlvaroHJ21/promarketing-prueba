@@ -46,6 +46,9 @@ export default async function Home() {
           <Button variant="outline" disabled>
             Button
           </Button>
+          <Button variant="outline" color='accent' disabled>
+            Button
+          </Button>
         </div>
       </section>
 

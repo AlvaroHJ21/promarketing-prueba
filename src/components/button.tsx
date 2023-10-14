@@ -33,7 +33,7 @@ export const Button = (props: Props) => {
 
         color == 'primary' &&
           variant == 'outline' &&
-          `bg-transparent border-2 border-primary-900 text-primary-900 hover:bg-primary-100 active:bg-primary-500 active:text-white disabled:border-neutral-200 disabled:text-neutral-200`,
+          `bg-transparent border-2 border-primary-900 text-primary-900 hover:bg-primary-100 active:bg-primary-500 active:text-white disabled:border-neutral-200 disabled:text-neutral-200 disabled:bg-transparent`,
 
         //ACCENT
         color == 'accent' &&
@@ -42,7 +42,7 @@ export const Button = (props: Props) => {
 
         color == 'accent' &&
           variant == 'outline' &&
-          `bg-transparent border-2 border-accent-900 text-accent-900 hover:bg-accent-100 active:bg-accent-500 active:text-white disabled:border-neutral-200 disabled:text-neutral-200`,
+          `bg-transparent border-2 border-accent-900 text-accent-900 hover:bg-accent-100 active:bg-accent-500 active:text-white disabled:border-neutral-200 disabled:text-neutral-200 disabled:bg-transparent`,
 
         // ICON POSITION
         iconPosition == 'right' && 'flex-row-reverse',
