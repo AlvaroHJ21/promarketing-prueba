@@ -1,5 +1,4 @@
-import { LabelSupplier } from './label-supplier';
-import { ButtonInfo } from './button-info';
+import { LabelSupplier, ButtonInfo } from './';
 
 interface Props {
   supplierName: string;

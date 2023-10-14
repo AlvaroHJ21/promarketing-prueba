@@ -6,6 +6,6 @@ export * from './card-game-cta';
 export * from './card-game-footer';
 export * from './card-game-header';
 export * from './card-game-info';
-export * from './card-game';
+export { default as CardGame } from './card-game';
 export * from './label-info';
 export * from './label-supplier';

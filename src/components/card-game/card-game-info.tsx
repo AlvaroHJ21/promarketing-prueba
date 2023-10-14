@@ -1,4 +1,4 @@
-import { LabelInfo } from './label-info';
+import { LabelInfo } from './';
 
 interface Props {
   name: string;

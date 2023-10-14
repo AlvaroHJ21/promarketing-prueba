@@ -1,5 +1,5 @@
-import React, { ButtonHTMLAttributes } from 'react';
-import { Button } from '../button/button';
+import { ButtonHTMLAttributes } from 'react';
+import { Button } from '@/components/button';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
