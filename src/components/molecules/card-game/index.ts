@@ -7,5 +7,3 @@ export * from './card-game-footer';
 export * from './card-game-header';
 export * from './card-game-info';
 export { default as CardGame } from './card-game';
-export * from './label-game-info';
-export * from './label-supplier';

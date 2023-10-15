@@ -1,5 +1,3 @@
-import { LabelGameInfo } from '.';
-
 interface Props {
   name: string;
   version: number;
@@ -16,5 +14,13 @@ export const CardGameInfo = ({ name, rtp, version }: Props) => {
       </div>
       <LabelGameInfo>VOTALIDAD: ALTA</LabelGameInfo>
     </div>
+  );
+};
+
+const LabelGameInfo = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <span className="bg-accent-900 bg-opacity-20 rounded-md font-bold text-[8px] whitespace-nowrap px-1 py-1 sm:text-xs">
+      {children}
+    </span>
   );
 };
