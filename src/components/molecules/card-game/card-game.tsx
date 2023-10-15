@@ -9,7 +9,7 @@ import {
   CardGameFooter,
   CardGameBgImage,
   CardGameBgOverlay,
-} from './';
+} from '.';
 
 // import img from '@/assets/img/card-placeholder.png';
 import type { Game } from '@/interfaces/Game';

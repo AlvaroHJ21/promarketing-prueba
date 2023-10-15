@@ -1,6 +1,5 @@
-import { AiOutlineInfoCircle } from 'react-icons/ai';
-
 import { cn } from '@/lib/util';
+import { Icon } from '@/components/atoms/icon';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'default' | 'accent';
@@ -17,9 +16,9 @@ export const ButtonInfo = (props: Props) => {
         className
       )}
       {...restProps}
-      aria-label='info'
+      aria-label="info"
     >
-      <AiOutlineInfoCircle />
+      <Icon icon="info" />
     </button>
   );
 };

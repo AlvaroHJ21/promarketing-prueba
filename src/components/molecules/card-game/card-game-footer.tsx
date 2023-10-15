@@ -1,4 +1,4 @@
-import { ButtonInfo, ButtonBonus } from './';
+import { ButtonInfo, ButtonBonus } from '.';
 
 interface Props {
   name: string;

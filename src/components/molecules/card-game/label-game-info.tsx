@@ -2,7 +2,7 @@ import { cn } from '@/lib/util';
 
 interface Props extends React.HTMLAttributes<HTMLSpanElement> {}
 
-export const LabelInfo = (props: Props) => {
+export const LabelGameInfo = (props: Props) => {
   const { children, className, ...restProps } = props;
 
   return (
