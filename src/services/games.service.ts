@@ -1,6 +1,6 @@
 import type { Game } from '@/interfaces/Game';
 
-const GAME_API_URL = 'https://run.mocky.io/v3/a095fe75-f09e-45fa-967c-4b9c4c908fb3';
+const GAME_API_URL = 'https://run.mocky.io/v3/54a25ed6-39a9-4860-b893-594b49336415';
 
 /**
  * Retrieves a list of games from the game API.
